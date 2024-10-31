@@ -43,9 +43,9 @@ const AboutSection = () => {
                 <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
-                <a href="/HuynhMinhHai-CV.pdf" download className="w-max flex items-center gap-x-2 mt-6 rounded-full border border-gray-300 bg-red-400 px-3 py-2 text-white hover:bg-red-500 transition-all">
+                <a href="/HuynhMinhHai-CV.pdf" download className="w-max flex items-center gap-x-1 mt-6 rounded-full border border-gray-300 bg-red-400 px-3 py-2 text-white hover:bg-red-500 transition-all">
                     <span>Download</span>
-                    <span>download icon</span>
+                    <span className="scale-[0.7]"><DownloadLineIcon /></span>
                 </a>
             </div>
         </div>
