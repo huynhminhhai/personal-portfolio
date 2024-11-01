@@ -80,9 +80,9 @@ const SkillsSection = () => {
     }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-y-0 px-96">
+    <div className="min-h-screen flex flex-col items-center justify-center gap-y-0 px-80">
         <Heading text="Skills" />
-        <div className="w-full flex justify-between flex-wrap gap-x-4 gap-y-4">
+        <div className="w-full flex justify-around flex-wrap gap-x-4 gap-y-4">
             {
                 skillData.map((item, i) => (
                     <motion.div

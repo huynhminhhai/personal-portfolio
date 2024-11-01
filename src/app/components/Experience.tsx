@@ -42,7 +42,7 @@ const ExperienceSection = () => {
                 src='/sanji1.png'
                 alt="Experience & Education"
                 width={400} height={400}
-                className="w-[220px] absolute -top-4 right-96 opacity-70 lg:hidden"
+                className="w-[220px] absolute -top-4 right-96 lg:hidden"
             />
             <div
                 className="w-full h-full flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10"
