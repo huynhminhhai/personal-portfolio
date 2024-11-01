@@ -36,7 +36,8 @@ const HeroSection = () => {
     const rotatX = useTransform(ySpring, [0, innerHeight], [10, -50])
 
     return (
-    <div 
+    <div
+        id='home'
         className='h-screen grid place-items-center'
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}

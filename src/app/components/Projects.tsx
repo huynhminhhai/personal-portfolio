@@ -62,10 +62,11 @@ const ProjectsSection = () => {
     useEffect(() => {
         handleClickType()
         prevIndex.current = index
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [index])
  
   return (
-    <div className="min-h-screen py-20 px-80">
+    <div id="project" className="min-h-screen py-20 px-80">
         <Heading text="Projects" />
         <div className="flex flex-wrap items-center justify-start gap-4 py-10">
             {

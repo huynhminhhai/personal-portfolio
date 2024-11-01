@@ -34,7 +34,7 @@ const aboutData = [
 
 const AboutSection = () => {
   return (
-    <div className="min-h-screen px-72 flex flex-col items-center justify-center">
+    <div id="about" className="min-h-screen px-72 flex flex-col items-center justify-center">
         <Heading text="About me" />
         <div className="w-full flex items-center justify-between sm:justify-center gap-10">
             <Image src='/zoro.png' alt="about me" width={400} height={400} className="w-[220px] lg:w-[200px] md:hidden"/>

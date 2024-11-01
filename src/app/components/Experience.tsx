@@ -36,7 +36,7 @@ const ExperienceSection = () => {
     
     const scrollY = useSpring(scrollYProgress, {stiffness: 200, damping: 20})
     return (
-        <div className="relative py-20 px-96">
+        <div id="exp" className="relative py-20 px-96">
             <Heading text="Experience & Education" />
             <Image
                 src='/sanji1.png'
