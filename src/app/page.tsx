@@ -6,6 +6,8 @@ import HeroSection from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/Projects";
 import SkillsSection from "./components/Skills";
+import Toggle from "./components/sub/Toggle";
+import Loading from "./components/sub/Loading";
 
 export default function Home() {
   const [id, setId] = useState('')
@@ -24,7 +26,7 @@ export default function Home() {
           }
         })
       },
-      {threshold: 0.3}
+      { threshold: 0.3 }
     )
 
     const compsArr = Array.from(compsRef.current.children) as Element[]
@@ -35,19 +37,24 @@ export default function Home() {
     return () => {
       compsArr.forEach((comp) => observer.unobserve(comp));
     };
-    
+
   }, [])
 
   return (
     <>
-      <Navbar id={id} />
-      <div ref={compsRef}>
-        <HeroSection />
-        <AboutSection />
-        <ExperienceSection />
-        <SkillsSection />
-        <ProjectsSection />
-      </div>
+      <Loading />
+      <Toggle>
+        <div>
+          <Navbar id={id} />
+          <div ref={compsRef}>
+            <HeroSection />
+            <AboutSection />
+            <ExperienceSection />
+            <SkillsSection />
+            <ProjectsSection />
+          </div>
+        </div>
+      </Toggle>
     </>
   );
 }

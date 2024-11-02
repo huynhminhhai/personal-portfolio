@@ -30,7 +30,7 @@ const Achievements = ({item}: {item: aboutItem}) => {
       <span className='text-4xl lg:text-2xl text-gray-300'>{item.icon}</span>
       <h1 className='flex flex-col gap-y-2'>
         <motion.span className='text-2xl lg:text-xl font-light text-yellow-500' onViewportEnter ={() => count(item.amount)} viewport={{once: true}}>{number}</motion.span>
-        <span className='text-sm tracking-wide text-gray-500'>{item.title}</span>
+        <span className='text-sm tracking-wide text-gray-500 dark:text-white'>{item.title}</span>
       </h1>
     </div>
   )

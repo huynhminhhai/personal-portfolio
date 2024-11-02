@@ -36,7 +36,7 @@ const ExperienceSection = () => {
     
     const scrollY = useSpring(scrollYProgress, {stiffness: 200, damping: 20})
     return (
-        <div id="exp" className="relative py-20 px-96">
+        <div id="exp" className="relative py-20 px-72 w-screen">
             <Heading text="Experience & Education" />
             <Image
                 src='/sanji1.png'
@@ -63,14 +63,14 @@ const ExperienceSection = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{once: true}}
                                 transition={{duration: 0.7, type: 'spring', stiffness: 50}}
-                                className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide sm:text-sm"
+                                className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-800"
                             >
-                                <h1 className="text-xl sm:text:lg font-light text-gray-700">{item.title}</h1>
-                                <p className="text-gray-800">
+                                <h1 className="text-xl sm:text:lg font-light text-gray-700 dark:text-zinc-50">{item.title}</h1>
+                                <p className="text-gray-800 dark:text-zinc-50">
                                     <span className="block font-light">Education:</span>
                                     <span className="block pl-2 font-extralight">{item.education}</span>
                                 </p>
-                                <div className="text-gray-800">
+                                <div className="text-gray-800 dark:text-zinc-50">
                                     <span className="font-light">Experience:</span>
                                     <ul className="pl-2">
                                         {
@@ -86,7 +86,7 @@ const ExperienceSection = () => {
                                     : 'right-full translate-x-1.5'
                                 }`}><ArrowLeftSFillIcon /></span>
                             </motion.div>
-                            <div className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-white ${
+                            <div className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-white dark:bg-zinc-800 dark:text-white ${
                                 i % 2 === 0
                                 ? 'left-full -translate-x-1/2 lg:left-1/2'
                                 : 'right-full translate-x-1/2 lg:right-1/2'

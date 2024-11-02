@@ -1,6 +1,6 @@
 const Heading = ({text}: {text:string}) => {
   return (
-    <div className="text-3xl sm:text-2xl font-bold text-gray-600 mb-14 self-start">{text}</div>
+    <div className="text-3xl sm:text-2xl font-bold text-gray-600 mb-14 self-start dark:text-white">{text}</div>
   )
 }
 

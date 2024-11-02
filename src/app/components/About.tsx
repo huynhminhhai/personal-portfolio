@@ -38,9 +38,9 @@ const AboutSection = () => {
         <Heading text="About me" />
         <div className="w-full flex items-center justify-between sm:justify-center gap-10">
             <Image src='/zoro.png' alt="about me" width={400} height={400} className="w-[220px] lg:w-[200px] md:hidden"/>
-            <div className="relative max-w-[800px] rounded-xl bg-zinc-100 p-5">
+            <div className="relative max-w-[800px] rounded-xl bg-zinc-100 p-5 dark:bg-zinc-800 dark:border">
                 <span className="absolute -left-5 top-10 scale-[2.5] text-zinc-100 md:hidden"><ArrowLeft /></span>
-                <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
+                <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px] dark:text-white">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
                 <a href="/HuynhMinhHai-CV.pdf" download className="w-max flex items-center gap-x-1 mt-6 rounded-full border border-gray-300 bg-red-400 px-3 py-2 text-white hover:bg-red-500 transition-all">

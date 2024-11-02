@@ -45,6 +45,9 @@ const HeroSection = () => {
         <div>
             <div className='flex flex-col items-center justify-center gap-y-3 font-light capitalize'>
                 <motion.div
+                    initial={{opacity: 0, y: -100}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.5}}
                     className='flex items-center justify-center'
                     style={{
                         rotateX: mouseMove ? rotatX : 0,
@@ -74,8 +77,8 @@ const HeroSection = () => {
                         transition={{opacity: {delay: 0.4}}}
                     >Hi</motion.span>
                 </motion.div>
-                <h1 className='text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl'>I am Huynh Minh Hai &</h1>
-                <p className='text-lg tracking-wider text-gray-700'>I like animations 😁</p>
+                <h1 className='text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white'>I am Huynh Minh Hai &</h1>
+                <p className='text-lg tracking-wider text-gray-700 dark:text-white'>I like animations 😁</p>
             </div>
             <div className='mt-8 flex justify-center gap-x-6 text-3xl text-yellow-600 sm:text-2xl'>
                 <a href="#" className='rounded hover:bg-red-400 hover:text-white transition-all'>
